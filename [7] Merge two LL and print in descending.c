@@ -113,5 +113,10 @@ inputAgain:
 		temp1=temp1->next;
 	}
 	
+	free(temp1);
+	free(temp2);
+	free(head1);
+	free(head2);
+	free(newNode);
 	return 0;
 }
