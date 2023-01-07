@@ -16,7 +16,7 @@ int main()
 	printf ("Input the number of nodes for your linked list: ");
 	scanf("%d", &n);
 	
-	printf ("\nInput %d elements in the array:\n", n);
+	printf ("\nInput %d data\n", n);
 	
 	i=1;
 	while(i<=n)
