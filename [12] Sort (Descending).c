@@ -16,7 +16,7 @@ int main()
 	printf ("Input the number of nodes for your linked list: ");
 	scanf("%d", &n);
 	
-	printf ("\nInput %d data:\n", n);
+	printf ("\nInput %d data: \n", n);
 	
 	i=1;
 	while(i<=n)
@@ -43,7 +43,7 @@ int main()
 	{
 		for(temp2=head; temp2->next!=NULL; temp2=temp2->next)
 		{
-			if(temp2->data > temp2->next->data)
+			if(temp2->data < temp2->next->data)
 			{
 				int swap;
 				
