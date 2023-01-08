@@ -77,15 +77,6 @@ int main()
 		}
 	}
 	
-	printf("\n%d\n", count);
-	
-	temp=head;
-	while(temp!=NULL)
-	{
-		printf("%d ", temp->data);
-		temp=temp->next;
-	}
-	
 	if(flag==1 && count%2==1)
 	{
 		printf ("\n\nData that appears odd number of times: %d\n", num->data);
