@@ -83,7 +83,7 @@ inputNo:
 	}
 	else
 	{
-		printf("\n\nTheere are no major element in the list.");
+		printf("\n\nThere are no major element in the list.");
 	}
 	
 	head=temp=newNode=temp1=temp2=majorElem=NULL;
