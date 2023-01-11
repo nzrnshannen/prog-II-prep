@@ -17,7 +17,7 @@ int main()
 {
 	int n, i, m1, m2;
 	head1=head2=NULL;
-	printf("Input size for your first linked list (will apply to your second LL also): ");
+	printf("Input the number of nodes for your first linked list (will apply to your second LL also): ");
 	scanf("%d", &n);
 	i=1;
 
