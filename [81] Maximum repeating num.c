@@ -49,7 +49,7 @@ int main()
 	{
 		if(temp1->data==-1)
 			continue;
-		
+		count=1;
 		for(temp2=temp1->next; temp2!=NULL; temp2=temp2->next)
 		{
 			if(temp1->data == temp2->data)
