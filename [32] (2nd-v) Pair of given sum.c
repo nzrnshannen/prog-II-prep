@@ -75,5 +75,13 @@ int main()
 	{
 		printf("\n\nPair of the given sum: [%d, %d]\n\n", num1, num2);
 	}
+	
+	head=temp=temp1=temp2=newNode=NULL;
+	free(head);
+	free(temp);
+	free(temp1);
+	free(temp2);
+	free(newNode);
+	
 	return 0;
 }
