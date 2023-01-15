@@ -76,6 +76,9 @@ void displayList()
 		printf("%d ", traverse->num);
 		traverse=traverse->next_addr;
 	}
+	
+	traverse=NULL;
+	free(traverse);
 }
 
 int countDuplicates()
