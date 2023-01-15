@@ -1,99 +1,88 @@
-#include<stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
+#include <conio.h>
 
 struct node{
 	int data;
-	struct node *next;
+	struct node *ptr;
 };
 
-struct node *head, *temp, *newNode, *num, *temp1, *temp2;
-int n;
+struct node *head, *temp, *temp1, *temp2, *newNode;
 
 int main()
 {
-	int i, r, count=0, flag=0;
+	int i=1, n, count, oddCount=0, num, flag=0;
 	head=NULL;
-	printf ("Input the number of nodes for your linked list: ");
+	
+	printf("Input the number of nodes for your linked list: ");
 	scanf("%d", &n);
 	
-	i=1;
+	printf("Input %d data:\n", n);
 	while(i<=n)
 	{
 		newNode=(struct node*)malloc(sizeof(struct node));
 		printf("Data %d: ", i++);
 		scanf("%d", &newNode->data);
-		newNode->next=NULL;
+		newNode->ptr=NULL;
 		
 		if(head==NULL)
-		{
 			head=temp=newNode;
-		}
 		else
 		{
-			temp->next=newNode;
+			temp->ptr=newNode;
 			temp=newNode;
 		}
 	}
 	
-	temp=head;
-	printf ("\nLinked list: ");
-	
-	while(temp!=NULL)
+	printf("\nLinked list: ");
+	for(temp=head; temp!=NULL; temp=temp->ptr)
 	{
 		printf("%d ", temp->data);
-		temp=temp->next;
 	}
 	
+	printf("\n\nChecking if there is a number that appears odd number of times...\nPress any key to continue- ");
+	getch();
 	
-	count=1;
-	
-	for(temp1=head; temp1!=NULL; temp1=temp1->next)
+	for(temp1=head; temp1!=NULL; temp1=temp1->ptr)
 	{
-		if(temp1->data==-1)
+		if(temp1->data==-9999)
 			continue;
-			
-		count=1;
 		
-		for(temp2=temp1->next; temp2!=NULL; temp2=temp2->next)
+		count=1;
+		for(temp2=temp1->ptr; temp2!=NULL; temp2=temp2->ptr)
 		{
-			if(temp1->data == temp2->data && temp2->data!=-1)
+			if(temp1->data==temp2->data)
 			{
+				temp2->data=-9999;
 				count++;
-				temp2->data=-1;
-				flag=1;
 			}
 		}
 		
-		if(flag==1 && count!=1 && count%2==1)
+		if(count%2==1 && count>1)
 		{
-			num=temp1;
+			num=temp1->data;
+			flag=1;
 			break;
 		}
-		else
-		{
-			count=1;
-			flag=0;
-			continue;
-		}
+	
 	}
 	
-	if(flag==1 && count%2==1)
+	
+	if(flag==0)
 	{
-		printf ("\n\nData that appears odd number of times: %d\n", num->data);
+		printf("\n\nThere's no number that appears odd number of times.\n\n");
 	}
 	else
 	{
-		printf ("\n\nNo data can be found that appears odd number of times.\n");
+		printf("\n\nThe first number that appears odd number of times: %d [%d times]\n\n", num, count);
 	}
 	
-	head=temp=temp1=temp2=newNode=num=NULL;
+	head=temp=temp1=temp2=newNode=NULL;
 	free(head);
 	free(temp);
 	free(temp1);
 	free(temp2);
 	free(newNode);
-	free(num);
 	
 	return 0;
-
 }
