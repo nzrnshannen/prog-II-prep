@@ -1,40 +1,31 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <conio.h>
 
 struct node{
 	int data;
 	struct node *next;
 };
 
-struct node *head, *temp, *newNode, *traverse;
+struct node *head, *temp, *temp1, *temp2, *newNode;
 
 int main()
 {
 	head=NULL;
-	int i=1, n, freq=1, flag=0;
-
-inputAgain:
-	printf ("Input the number of nodes for your linked list: ");
+	int i=1, n;
+	printf("Input the number of nodes for your linked list: ");
 	scanf("%d", &n);
 	
-	if(n<=0)
-	{
-		printf ("\n\nInput doesn't aid with the construction of LL. Try again.\n\n");
-		goto inputAgain;
-	}
-	
+	printf("Input %d data:\n", n);
 	while(i<=n)
 	{
 		newNode=(struct node*)malloc(sizeof(struct node));
-		printf ("Data %d: ", i++);
+		printf("Data %d: ", i++);
 		scanf("%d", &newNode->data);
-		
 		newNode->next=NULL;
 		
 		if(head==NULL)
-		{
 			head=temp=newNode;
-		}
 		else
 		{
 			temp->next=newNode;
@@ -42,30 +33,46 @@ inputAgain:
 		}
 	}
 	
-	//traversing
+	printf("\n\nThe created linked list: ");
+	temp=head;
 	
-	for(temp=head; temp!=NULL; temp=temp->next)
+	while(temp!=NULL)
 	{
-		if(temp->data==-1)
+		printf("%d ", temp->data);
+		temp=temp->next;
+	}
+	
+	printf("\n\nNow counting the frequency of each data...\nPress any key to continue- ");
+	getch();
+	
+	int freq;
+	
+	printf("\n\nThe frequency for each data in each node are the following:\n");
+	for(temp1=head; temp1!=NULL; temp1=temp1->next)
+	{
+		if(temp1->data==-9999)
 			continue;
 		
-		for(traverse=temp->next; traverse!=NULL; traverse=traverse->next)
+		freq=1;
+		
+		for(temp2=temp1->next; temp2!=NULL; temp2=temp2->next)
 		{
-			if(temp->data == traverse->data && temp->data!=-1 && traverse->data!=-1)
+			if(temp1->data == temp2->data)
 			{
+				temp2->data=-9999;
 				freq++;
-				traverse->data=-1;
 			}
 		}
 		
-		printf ("%d occurs %d times\n", temp->data, freq);
-		freq=1;
+		printf("\t%d occurs %d times\n", temp1->data, freq);
 	}
-	
+		
+	head=temp=temp1=temp2=newNode=NULL;
 	free(head);
 	free(temp);
+	free(temp1);
+	free(temp2);
 	free(newNode);
-	free(traverse);
 	
-	return 0;	
+	return 0;
 }
