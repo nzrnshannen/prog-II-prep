@@ -7,16 +7,16 @@
 struct node{
 	int data;
 	struct node *next;
-};
-
-struct node *head, *temp, *temp1, *temp2, *newNode;
+}*head, *temp, *newNode, *tmp1, *tmp2;
 
 int main()
 {
-	int diff, n, i=1, count=0;
+	int n, diff=0, count=0;
 	scanf("%d", &n);
 	scanf("%d", &diff);
 	
+	head=NULL;
+	int i=1; 
 	while(i<=n)
 	{
 		newNode=(struct node*)malloc(sizeof(struct node));
@@ -36,24 +36,22 @@ int main()
 		i++;
 	}
 	
-	for(temp1=head; temp1!=NULL; temp1=temp1->next)
+	for(tmp1=head; tmp1!=NULL; tmp1=tmp1->next)
 	{
-		for(temp2=head; temp2!=NULL; temp2=temp2->next)
+		for(tmp2=head; tmp2!=NULL; tmp2=tmp2->next)
 		{
-			if((temp1->data - temp2->data)==diff)
-			{
+			if((tmp1->data - tmp2->data)==diff)
 				count++;
-			}
 		}
 	}
 	
 	printf("%d", count);
 	
-	head=temp=temp1=temp2=newNode=NULL;
+	head=temp=tmp1=tmp2=newNode=NULL;
 	free(head);
 	free(temp);
-	free(temp1);
-	free(temp2);
+	free(tmp1);
+	free(tmp2);
 	free(newNode);
 	
 	return 0;
