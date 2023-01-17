@@ -1,5 +1,3 @@
-//program was based on our previous CodeChum examination (2022). This serves as a review only. (from array to LL conversion)
-
 
 #include <stdio.h>
 #include <stdlib.h>
