@@ -81,13 +81,13 @@ inputNo:
 		}
 	}
 	
-	head=temp=newNode=temp1=NULL;
+
 	free(head);
 	free(temp);
 	free(newNode);
 	free(temp1);
 
 	head=temp=newNode=temp1=NULL;
-	
+
 	return 0;
 }
