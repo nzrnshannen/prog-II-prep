@@ -81,7 +81,7 @@ inputNo:
 		printf ("\n\nAddition of the two data that is closest to zero can't be found in the given linked list.");
 	}
 	
-	head=newNode=temp=temp1=temp2=nodeOne=nodeTwo=NULL;
+
 	free(head);
 	free(temp);
 	free(newNode);
@@ -89,5 +89,7 @@ inputNo:
 	free(temp2);
 	free(nodeOne);
 	free(nodeTwo);
+
+	head=newNode=temp=temp1=temp2=nodeOne=nodeTwo=NULL;
 	return 0;
 }

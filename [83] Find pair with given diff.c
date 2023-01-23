@@ -71,12 +71,13 @@ int main()
 		printf("\n\nNo distinctive pairs were found.\n");
 	}
 	
-	head=temp=temp1=temp2=newNode=NULL;
 	free(head);
 	free(temp1);
 	free(temp2);
 	free(temp);
 	free(newNode);
+
+	head=temp=temp1=temp2=newNode=NULL;
 	
 	return 0;
 }

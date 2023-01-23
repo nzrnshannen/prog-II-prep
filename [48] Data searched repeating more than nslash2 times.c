@@ -86,6 +86,8 @@ inputNo:
 	free(temp);
 	free(newNode);
 	free(temp1);
+
+	head=temp=newNode=temp1=NULL;
 	
 	return 0;
 }

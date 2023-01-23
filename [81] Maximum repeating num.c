@@ -70,12 +70,13 @@ int main()
 	printf("\nThe maximum repeating number is: %d", maxElem);
 	
 	
-	head=temp=temp1=temp2=newNode=NULL;
 	free(head);
 	free(temp);
 	free(temp1);
 	free(temp2);
 	free(newNode);
 	
+	head=temp=temp1=temp2=newNode=NULL;
+
 	return 0;
 }

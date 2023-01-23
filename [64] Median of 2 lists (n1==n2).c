@@ -139,7 +139,6 @@ int main()
 	printf("\nM2: %d\n", m2);
 	printf("\nMedian: %d ", (m1+m2)/2);
 	
-	head1=head2=temp1=temp2=t1=t2=newNode=NULL;
 	free(head1);
 	free(head2);
 	free(temp1);
@@ -147,6 +146,8 @@ int main()
 	free(t1);
 	free(t2);
 	free(newNode);
+
+	head1=head2=temp1=temp2=t1=t2=newNode=NULL;
 	
 	return 0;
 }

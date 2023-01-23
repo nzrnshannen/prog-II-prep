@@ -45,12 +45,13 @@ int main()
 	
 	printf("%d", count);
 	
-	head=temp=tmp1=tmp2=newNode=NULL;
 	free(head);
 	free(temp);
 	free(tmp1);
 	free(tmp2);
 	free(newNode);
+
+	head=temp=tmp1=tmp2=newNode=NULL;
 	
 	return 0;
 }

@@ -85,11 +85,13 @@ int main()
 	
 	printf("\nThe smallest positive data missed is: %d", smallest);
 	
-	head=temp=newNode=check=NULL;
+
 	free(head);
 	free(temp);
 	free(newNode);
 	free(check);
-	
+
+	head=temp=newNode=check=NULL;
+
 	return 0;
 }

@@ -70,10 +70,11 @@ inputNo:
 		printf ("\n\nThere's no such thing as [%d] in the given list.", num);
 	}
 	
-	head=temp=newNode=NULL;
 	free(head);
 	free(temp);
 	free(newNode);
+
+	head=temp=newNode=NULL;
 	
 	return 0;
 }

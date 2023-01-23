@@ -30,9 +30,10 @@ void sortList()
 		}
 	}
 	
-	temp1=temp2=NULL;
 	free(temp1);
 	free(temp2);
+	temp1=temp2=NULL;
+
 }
 
 int main()
@@ -92,10 +93,10 @@ int main()
 	
 	printf("\nThe smallest positive data missed is: %d", smallest);
 	
-	head=temp=newNode=NULL;
 	free(head);
 	free(temp);
 	free(newNode);
-	
+	head=temp=newNode=NULL;
+
 	return 0;
 }

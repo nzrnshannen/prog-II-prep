@@ -58,10 +58,11 @@ int main()
 		}
 	}
 	
-	head=temp=newNode=NULL;
 	free(head);
 	free(temp);
 	free(newNode);
+
+	head=temp=newNode=NULL;
 	
 	return 0;
 }

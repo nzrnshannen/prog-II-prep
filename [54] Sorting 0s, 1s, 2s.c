@@ -85,7 +85,6 @@ int main()
 		traverse=traverse->next;
 	}
 	
-	head0=head1=head2=temp0=temp1=temp2=newNode=traverse=NULL;
 	free(head0);
 	free(head1);
 	free(head2);
@@ -95,6 +94,8 @@ int main()
 	free(newNode);
 	free(traverse);
 
+	head0=head1=head2=temp0=temp1=temp2=newNode=traverse=NULL;
+	
 	return 0;
 	
 }

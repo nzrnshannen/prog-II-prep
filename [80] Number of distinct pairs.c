@@ -71,12 +71,13 @@ int main()
 	else
 		printf("\n\nNumber of distinct pairs: %d\n", pairCount);
 	
-	head=temp=temp1=temp2=newNode=NULL;
 	free(head);
 	free(temp);
 	free(temp1);
 	free(temp2);
 	free(newNode);
+
+	head=temp=temp1=temp2=newNode=NULL;
 	
 	return 0;
 	

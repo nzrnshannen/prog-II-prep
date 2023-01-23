@@ -43,7 +43,6 @@ int main()
 		printf("The first common element found: %d\n", common_data->num);
 	}
 	
-	head1=head2=head=temp=newNode=common_data=temp1=temp2=NULL;
 	free(head);
 	free(head1);
 	free(head2);
@@ -53,6 +52,8 @@ int main()
 	free(temp2);
 	free(head);
 	free(temp);
+
+	head1=head2=head=temp=newNode=common_data=temp1=temp2=NULL;
 	
 	return 0;
 }

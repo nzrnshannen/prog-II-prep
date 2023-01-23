@@ -43,7 +43,6 @@ int main()
 		printf("\n\nTwo linked lists are equal.\n");
 	}
 	
-	head=head1=head2=temp=temp1=temp2=newNode=NULL;
 	free(head);
 	free(head1);
 	free(head2);
@@ -51,6 +50,7 @@ int main()
 	free(temp1);
 	free(temp2);
 	free(newNode);
+	head=head1=head2=temp=temp1=temp2=newNode=NULL;
 	
 	return 0;
 }

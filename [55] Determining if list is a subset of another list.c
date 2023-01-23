@@ -94,13 +94,14 @@ int main()
 		}
 	}
 	
-	head1=head2=temp=temp1=temp2=newNode=NULL;
 	free(head1);
 	free(head2);
 	free(temp);
 	free(temp1);
 	free(temp2);
 	free(newNode);
+
+	head1=head2=temp=temp1=temp2=newNode=NULL;
 	
 	return 0;
 }

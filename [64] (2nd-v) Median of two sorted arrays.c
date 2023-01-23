@@ -128,9 +128,9 @@ void sortList(struct node *hd)
 			}
 		}
 	}
-	
-	hd=NULL;
+
 	free(hd);
+	hd=NULL;
 }
 
 int findMedian(struct node *head, struct node *temp)
@@ -161,8 +161,8 @@ int findMedian(struct node *head, struct node *temp)
 		median=temp->num;
 	}
 	
-	head=temp=NULL;
 	free(head);
 	free(temp);
+	head=temp=NULL;
 	return median;
 }

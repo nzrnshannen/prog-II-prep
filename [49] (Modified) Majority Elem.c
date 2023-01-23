@@ -86,13 +86,15 @@ inputNo:
 		printf("\n\nThere are no major element in the list.");
 	}
 	
-	head=temp=newNode=temp1=temp2=majorElem=NULL;
+	
 	free(head);
 	free(temp);
 	free(newNode);
 	free(temp1);
 	free(temp2);
 	free(majorElem);
-	
+
+	head=temp=newNode=temp1=temp2=majorElem=NULL;
+
 	return 0;
 }

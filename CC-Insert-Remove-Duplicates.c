@@ -57,11 +57,12 @@ int main()
 		traverse=traverse->next;
 	}
 	
-	head=temp=newNode=traverse=NULL;
 	free(head);
 	free(temp);
 	free(newNode);
 	free(traverse);
+
+	head=temp=newNode=traverse=NULL;
 	
 	return 0;
 }

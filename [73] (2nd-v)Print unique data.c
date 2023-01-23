@@ -69,11 +69,12 @@ int main()
 		temp=temp->next;
 	}
 
-	head=temp=newNode=traverse=NULL;
 	free(head);
 	free(temp);
 	free(newNode);
 	free(traverse);
+
+	head=temp=newNode=traverse=NULL;
 	
 	return 0;
 }

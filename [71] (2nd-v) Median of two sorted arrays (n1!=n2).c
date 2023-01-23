@@ -122,9 +122,10 @@ void displayList(struct node**hd, struct node **tmp)
 	
 	printf("\n\n");
 	
-	hd=tmp=NULL;
 	free(hd);
 	free(tmp);
+	hd=tmp=NULL;
+	
 }
 
 void sortList(struct node *hd)
@@ -145,8 +146,9 @@ void sortList(struct node *hd)
 		}
 	}
 	
-	hd=NULL;
 	free(hd);
+	hd=NULL;
+
 }
 
 float findMedian(struct node *head, struct node *temp)
@@ -181,10 +183,11 @@ float findMedian(struct node *head, struct node *temp)
 		median=(float)(temp->num + prev->num)/2;
 	}
 	
-	head=temp=prev=NULL;
 	free(head);
 	free(temp);
 	free(prev);
-	
+
+	head=temp=prev=NULL;
+
 	return median;
 }

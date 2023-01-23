@@ -77,12 +77,14 @@ int main()
 	
 	printf("\n\nThe smallest positive number missing in the list is: %d", smallestPos);
 	
-	head=temp=temp1=check=newNode=NULL;
+
 	free(head);
 	free(temp);
 	free(temp1);
 	free(check);
 	free(newNode);
-	
+
+	head=temp=temp1=check=newNode=NULL;
+
 	return 0;
 }

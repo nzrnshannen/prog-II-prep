@@ -72,12 +72,13 @@ int main()
 	printf("\nThe data which provide maximum difference are: %d, %d\n", ele1, ele2);
 	printf("The maximum difference between two data in the list is: %d", maxDiff);
 	
-	head=temp=newNode=temp1=temp2=NULL;
 	free(head);
 	free(temp);
 	free(newNode);
 	free(temp1);
 	free(temp2);
+
+	head=temp=newNode=temp1=temp2=NULL;
 	
 	return 0;
 }

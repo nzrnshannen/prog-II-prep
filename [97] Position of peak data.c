@@ -70,11 +70,12 @@ int main()
 		printf("\n\nNo peak data was found in the list.");
 	}
 	
-	head=temp=newNode=prev=NULL;
 	free(head);
 	free(temp);
 	free(newNode);
 	free(prev);
+
+	head=temp=newNode=prev=NULL;
 	
 	return 0;
 }

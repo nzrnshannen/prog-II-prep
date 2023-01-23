@@ -56,13 +56,13 @@ inputAnother:
 	
 	
 	end:
-	head=traverse=temp=temp1=temp2=newNode=NULL;
 	free(head);
 	free(traverse);
 	free(temp);
 	free(temp1);
 	free(temp2);
 	free(newNode);
+	head=traverse=temp=temp1=temp2=newNode=NULL;
 	
 	return 0;
 }

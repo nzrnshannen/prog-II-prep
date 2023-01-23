@@ -79,12 +79,13 @@ int main()
 	else
 		printf("\n\nNumber of nodes in which its data occurs odd number of times are either one only or none.");
 	
-	head=temp=temp1=temp2=newNode=NULL;
 	free(head);
 	free(temp);
 	free(temp1);
 	free(temp2);
 	free(newNode);
+
+	head=temp=temp1=temp2=newNode=NULL;
 	
 	return 0;
 }

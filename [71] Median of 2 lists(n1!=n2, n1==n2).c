@@ -178,12 +178,13 @@ input_n2:
 	float median=findMedian(head1, temp1, n);
 	printf("\n\n\nMedian: %.3f", median);
 	
-	head1=head2=temp1=temp2=newNode=NULL;
 	free(head1);
 	free(head2);
 	free(temp1);
 	free(temp2);
 	free(newNode);
+
+	head1=head2=temp1=temp2=newNode=NULL;
 	
 	return 0;
 }
