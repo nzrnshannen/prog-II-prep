@@ -56,13 +56,14 @@ int main()
 		printf("\n\nTotal number of duplicates: %d\n\n", result);
 	}
 	
-	head=temp1=temp2=temp=newNode=NULL;
 	free(head);
 	free(temp1);
 	free(temp2);
 	free(temp);
 	free(newNode);
-	
+
+	head=temp1=temp2=temp=newNode=NULL;
+		
 	return 0;
 }
 
@@ -77,8 +78,8 @@ void displayList()
 		traverse=traverse->next_addr;
 	}
 	
-	traverse=NULL;
 	free(traverse);
+	traverse=NULL;
 }
 
 int countDuplicates()

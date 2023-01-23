@@ -101,5 +101,7 @@ enterAgain:
 	free(temp2);
 	free(newNode);
 
+	head=head1=head2=temp=temp1=temp2=newNode=NULL;
+	
 	return 0;
 }

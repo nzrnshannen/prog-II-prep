@@ -56,10 +56,11 @@ int main()
 	
 	printf ("\nMissing number: %d", (size*(size+1))/2 - sum);
 	
-	head=temp=newNode=NULL;
 	free(head);
 	free(temp);
 	free(newNode);
+
+	head=temp=newNode=NULL;
 	
 	return 0;
 }

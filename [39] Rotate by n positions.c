@@ -90,12 +90,13 @@ int main()
 		temp=temp->next;
 	}
 	
-	head=start=temp=newNode=NULL;
 	free(head);
 	free(start);
 	free(temp);
 	free(newNode);
 	free(traverse);
+
+	head=start=temp=newNode=NULL;
 	
 	return 0;
 }

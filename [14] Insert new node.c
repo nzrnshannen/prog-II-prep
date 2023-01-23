@@ -122,11 +122,12 @@ inputPos:
 	printf ("\nLinked list after insertion: ");
 	displayList();
 	
-
-    head=temp=newNode=prev=NULL;
     free(head);
     free(temp);
     free(newNode);
     free(prev);
+
+	head=temp=newNode=prev=NULL;
+
 	return 0;
 }

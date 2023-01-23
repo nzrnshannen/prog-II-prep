@@ -116,7 +116,6 @@ int main()
 		temp=temp->next_node;
 	}
 	
-	head1=head2=temp=temp1=temp2=t=newNode=NULL;
 	free(head1);
 	free(head2);
 	free(temp);
@@ -124,6 +123,8 @@ int main()
 	free(temp2);
 	free(t);
 	free(newNode);
+
+	head1=head2=temp=temp1=temp2=t=newNode=NULL;
 	
 	return 0;
 }

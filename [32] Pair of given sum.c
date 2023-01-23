@@ -10,13 +10,13 @@ struct node *head, *temp, *newNode, *temp1, *temp2;
 
 void freeNode()
 {
-	head=temp=newNode=temp1=temp2=NULL;
 	free(head);
 	free(temp);
 	free(newNode);
 	free(temp1);
 	free(temp2);
 	
+	head=temp=newNode=temp1=temp2=NULL;
 }
 int main()
 {

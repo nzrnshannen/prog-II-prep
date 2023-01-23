@@ -105,11 +105,12 @@ inputAgain:
 	printf ("\nLinked list after deletion: ");
 	displayList();
 
-    head=temp=newNode=prev=NULL;
     free(head);
     free(temp);
     free(newNode);
     free(prev);
 
+    head=temp=newNode=prev=NULL;
+	
     return 0;
 }

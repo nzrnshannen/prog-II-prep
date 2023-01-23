@@ -72,10 +72,11 @@ int main()
 	
 	printf ("\nThe second largest data: %d", largest2nd);
 	
-	head=temp=newNode=NULL;
 	free(head);
 	free(temp);
 	free(newNode);
+
+	head=temp=newNode=NULL;
 	
 	return 0;
 }

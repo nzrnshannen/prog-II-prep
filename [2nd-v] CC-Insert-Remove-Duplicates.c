@@ -70,11 +70,11 @@ inputNo:
 		temp=temp->next;
 	}
 	
-	head=temp=check=newNode=NULL;
 	free(head);
 	free(temp);
 	free(check);
 	free(newNode);
+	head=temp=check=newNode=NULL;
 	
 	return 0;
 }

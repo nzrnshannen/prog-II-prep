@@ -66,6 +66,8 @@ int main()
 	free(newNode);
 	free(traverse);
 	free(temp);
+
+	head=newNode=traverse=temp=NULL;
 	
 	return 0;
 }

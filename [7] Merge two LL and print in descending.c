@@ -118,5 +118,8 @@ inputAgain:
 	free(head1);
 	free(head2);
 	free(newNode);
+
+	temp1=temp2=head1=head2=newNode=NULL;
+	
 	return 0;
 }

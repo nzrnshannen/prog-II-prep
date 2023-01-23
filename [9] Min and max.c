@@ -63,6 +63,8 @@ int main()
 	free(temp);
 	free(head);
 	free(newNode);
+
+	temp=head=newNode=NULL;
 	
 	return 0;
 }

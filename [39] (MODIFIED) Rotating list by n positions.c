@@ -77,7 +77,6 @@ int main()
 	printf("\n\nAfter rotating: ");
 	displayList();
 	
-	head=temp=temp1=temp2=check=newNode=NULL;
 	free(head);
 	free(temp);
 	free(temp1);
@@ -85,6 +84,8 @@ int main()
 	free(check);
 	free(newNode);
 	free(start);
+	
+	head=temp=temp1=temp2=check=newNode=NULL;
 	
 	return 0;
 }

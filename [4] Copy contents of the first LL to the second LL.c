@@ -78,6 +78,8 @@ int main()
 	free(traverse);
 	free(head1);
 	free(head2);
+
+	head1=head2=traverse=NULL;
 	
 	return 0;
 }

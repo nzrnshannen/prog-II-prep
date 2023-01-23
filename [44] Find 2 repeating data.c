@@ -113,8 +113,6 @@ inputNo:
 			printf("\n\nNo repeating data can be found.\n");
 	}
 
-
-	head=temp=newNode=temp1=temp2=repeat=t=NULL;
 	free(head);
 	free(temp);
 	free(newNode);
@@ -122,6 +120,8 @@ inputNo:
 	free(temp2);
 	free(repeat);
 	free(t);
+
+	head=temp=newNode=temp1=temp2=repeat=t=NULL;
 	
 	return 0;
 }

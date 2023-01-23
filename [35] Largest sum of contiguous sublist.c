@@ -79,13 +79,14 @@ int main()
 	
 	printf ("\nLargest sum of the contiguous sub-list: %d", maxSum);
 	
-	head=temp=temp1=newNode=NULL;
 	free(temp);
 	free(temp1);
 	free(temp2);
 	free(temp3);
 	free(newNode);
 	free(head);
+
+	head=temp=temp1=newNode=NULL;
 	
 	return 0;
 }

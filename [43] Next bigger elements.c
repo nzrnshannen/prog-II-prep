@@ -121,7 +121,6 @@ inputNo:
 	printf("\nNext bigger data list:\n");
 	displayFunc(start);
 	
-	head=newNode=temp=temp1=temp2=start=t=NULL;
 	free(head);
 	free(newNode);
 	free(temp);
@@ -129,6 +128,8 @@ inputNo:
 	free(temp2);
 	free(start);
 	free(t);
+
+	head=newNode=temp=temp1=temp2=start=t=NULL;
 	
 	return 0;
 }

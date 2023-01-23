@@ -63,11 +63,13 @@ int main()
 		temp=temp->next;
 	}
 	
-	head=temp=temp1=temp2=newNode=NULL;
 	free(temp);
 	free(temp1);
 	free(temp2);
 	free(head);
 	free(newNode);
+
+	head=temp=temp1=temp2=newNode=NULL;
+	
 	return 0;
 }

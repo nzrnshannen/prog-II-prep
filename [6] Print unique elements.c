@@ -72,12 +72,13 @@ int main()
 		printf("\nSorry, there are no unique numbers in the list.\n\n");
 	}
 	
-	head=temp=temp1=temp2=newNode=NULL;
 	free(head);
 	free(temp);
 	free(temp1);
 	free(temp2);
 	free(newNode);
+
+	head=temp=temp1=temp2=newNode=NULL;
 	
 	return 0;
 }

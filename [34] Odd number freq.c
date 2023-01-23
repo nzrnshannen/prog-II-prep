@@ -77,12 +77,13 @@ int main()
 		printf("\n\nThe first number that appears odd number of times: %d [%d times]\n\n", num, count);
 	}
 	
-	head=temp=temp1=temp2=newNode=NULL;
 	free(head);
 	free(temp);
 	free(temp1);
 	free(temp2);
 	free(newNode);
+
+	head=temp=temp1=temp2=newNode=NULL;
 	
 	return 0;
 }
